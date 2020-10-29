@@ -17,12 +17,14 @@ html{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .form_container{
-   left: 35%;
+   left: 40%;
    top: 25%;
    position: absolute;
+   
 }
 input[type=text]{
     width: 300px;
@@ -51,4 +53,28 @@ button{
 button:focus{
     outline: none;
     border: none;
+}
+.result-container{
+    width: 200px;
+    height: 250px;
+    background: white;
+    position: absolute;
+    left: 43%;
+    top: 50%;
+    margin: 0;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px black;
+
+}
+.name_box,.degree-box,.icon-box,.desc-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+.name_box{
+    font-size: 20px;
+}
+.degree-box{
+    font-size: 40px;
 }
