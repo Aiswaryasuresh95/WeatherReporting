@@ -9,7 +9,7 @@ const result=document.getElementById('result');
 btn.addEventListener('click',()=>{
     event.preventDefault();
     
-   
+    result.style.display = "block";
 
     const x=document.querySelector('#city').value;
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${x}&appid=e30c82155ac392516be36f6e90588c83
@@ -30,13 +30,6 @@ btn.addEventListener('click',()=>{
 
     const description=(data.weather[0].description).toUpperCase();
     desp.innerHTML=description;
-
-    if (result.style.display === "none") {
-        result.style.display = "block";
-      } else {
-        result.style.display = "none";
-      }
-    
 
 
    
